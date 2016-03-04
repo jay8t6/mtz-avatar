@@ -1,0 +1,24 @@
+{
+  "name": "mtz-avatar",
+  "version": "1.0.0",
+  "description": "Web Component example using Polymer",
+  "authors": [
+    "WebComponents.org"
+  ],
+  "license": "MIT",
+  "main": "index.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^1.0.0"
+  }
+}

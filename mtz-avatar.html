@@ -1,0 +1,57 @@
+<!-- Imports polymer -->
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- Defines element markup -->
+<dom-module id="mtz-avatar">
+    <link rel="import" type="css" href="mtz-avatar.css">
+    <template>
+      <div class="ui grid container mtz-avatar">
+        <div class="row centered profile">
+          <div class="four wide column">
+            <img src="{{fetch.user.pic}}"/>
+          </div>
+          <div class="twelve wide column">
+            <p class="name">{{fetch.user.name}}</p>
+            <p class="title">{{fetch.user.title}}</p>
+          </div>
+        </div>
+        <div class="row plate">
+          <template is="dom-repeat" items="{{fetch.info}}">
+            <div class="center aligned eight wide column">
+              <p class="desc">{{item.type}}</p>
+              <p class="value">{{item.value}}</p>
+            </div>
+          </template>
+        </div>
+      </div>
+    </template>
+</dom-module>
+
+<!-- Registers custom element -->
+<script>
+Polymer({
+    is: 'mtz-avatar',
+    properties: {
+        fetch: {
+            type: Object,
+            value: {
+               user: {
+                  name: "John Doe",
+                  title: "Interactive Developer",
+                  pic: "https://cdn4.iconfinder.com/data/icons/gray-user-management/512/rounded-64.png"
+               },
+               info: [
+                 {
+                    type: 'Points',
+                    value: '1.8K'
+                 },
+                 {
+                   type: 'Recognition',
+                   value: '13'
+                 }
+               ]
+            }
+        }
+    }
+});
+</script>
