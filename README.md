@@ -1,5 +1,22 @@
 # &lt;mtz-avatar&gt;
 
+## Run the Standalone version
+
+Follow the steps below to run the mtz-avatar component demo
+
+```bash
+npm install -g bower polyserve #this component requires bower and polyserve
+
+bower install
+npm install #when it gets to semantic-ui setup, press Enter to choose all the default options.
+
+cd semantic #cd into semantic folder to build
+gulp build
+
+cd .. # go back to the parent directory
+polyserve #access the component @ http://localhost:8080/components/mtz-avatar/
+```
+
 ## Install
 
 Install the component using [Bower](http://bower.io/):
