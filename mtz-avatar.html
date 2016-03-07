@@ -31,27 +31,25 @@
 <script>
 Polymer({
     is: 'mtz-avatar',
-    properties: {
-        fetch: {
-            type: Object,
-            value: {
-               user: {
-                  name: 'John Doe',
-                  title: 'Interactive Developer',
-                  pic: 'https://cdn4.iconfinder.com/data/icons/gray-user-management/512/rounded-64.png'
-               },
-               info: [
-                 {
-                    type: 'Points',
-                    value: '1.8K'
-                 },
-                 {
-                   type: 'Recognition',
-                   value: '13'
-                 }
-               ]
-            }
-        }
+    properties: {},
+    ready: function() {
+      this.fetch = {
+        user: {
+           name: 'John Doe',
+           title: 'Interactive Developer',
+           pic: 'https://cdn4.iconfinder.com/data/icons/gray-user-management/512/rounded-64.png'
+        },
+        info: [
+          {
+             type: 'Points',
+             value: '1.8K'
+          },
+          {
+            type: 'Recognition',
+            value: '13'
+          }
+        ]
+      }
     }
 });
 </script>
